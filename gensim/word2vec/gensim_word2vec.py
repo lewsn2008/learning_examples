@@ -30,7 +30,6 @@ class Sentences(object):
                     line = line.decode('utf8')
                 except:
                     logging.error('Failed to decode line %s' % line, file=sys.stderr)
-
             yield line.split('\t')
 
 
